@@ -13,24 +13,15 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Navbar background change on scroll
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
-    } else {
-        navbar.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)';
-    }
-});
-
-// Smooth scroll for anchor links (fallback for older browsers)
+// Smooth scroll for anchor links with offset for sticky nav
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
+            const navbar = document.querySelector('.navbar');
             const navHeight = navbar.offsetHeight;
-            const targetPosition = target.offsetTop - navHeight;
+            const targetPosition = target.offsetTop - navHeight - 10;
             window.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'
@@ -39,30 +30,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Intersection Observer for scroll animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+// Active nav link highlighting on scroll
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY + 100;
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+        if (navLink) {
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                navLink.classList.add('nav-active');
+            } else {
+                navLink.classList.remove('nav-active');
+            }
         }
-    });
-}, observerOptions);
-
-// Apply animation to elements
-document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll(
-        '.menu-item, .special-card, .contact-card, .feature, .order-step'
-    );
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
     });
 });

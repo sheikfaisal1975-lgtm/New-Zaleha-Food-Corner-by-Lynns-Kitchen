@@ -3,367 +3,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Zaleha Food Corner by Lynn's Kitchen | Indonesian & Asian Cuisine</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>New Zaleha Food Corner by Lynn's Kitchen | Indonesian &amp; Asian Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <span>Language</span>
+                <a href="#">Sign Up for Email</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="search-link">&#128269; Search</a>
+                <a href="#" class="location-link">&#128205; Change your Location</a>
+                <a href="#order" class="btn-order-now">Order Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <h1>New Zaleha Food Corner</h1>
-                <span class="tagline">by Lynn's Kitchen</span>
+                <a href="#home">
+                    <h1>Zaleha<span>FC</span></h1>
+                </a>
             </div>
             <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#specials">Specials</a></li>
+                <li><a href="#menu" class="nav-active">Our Menu</a></li>
+                <li><a href="#order">Order Online</a></li>
+                <li><a href="#specials">Rewards &amp; Deals</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#about">About Our Food</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#order" class="btn-order">Order Now</a></li>
             </ul>
         </div>
+        <div class="nav-underline"></div>
     </nav>
 
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h2>Authentic Indonesian &amp; Asian Cuisine</h2>
-            <p>Experience the rich flavours of Southeast Asia, crafted with love and tradition by Lynn's Kitchen</p>
-            <a href="#menu" class="btn-primary">Explore Our Menu</a>
-            <a href="#order" class="btn-secondary">Order Online</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Menu Categories Grid (McDonald's Style) -->
+    <section id="menu" class="menu-categories">
         <div class="container">
-            <div class="section-header">
-                <h2>Our Story</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Welcome to <strong>New Zaleha Food Corner by Lynn's Kitchen</strong>, where every dish tells a story of heritage, passion, and authentic flavours passed down through generations.</p>
-                    <p>Our kitchen brings you the best of Indonesian and Asian cuisine &mdash; from aromatic rendang and fragrant nasi goreng to comforting laksa and crispy satay. Each recipe is prepared with fresh ingredients and traditional spices, delivering an unforgettable dining experience.</p>
-                    <p>Whether you're craving a hearty meal or a light bite, we invite you to savour the taste of home-cooked goodness delivered straight to your door.</p>
-                </div>
-                <div class="about-features">
-                    <div class="feature">
-                        <span class="feature-icon">&#127834;</span>
-                        <h3>Fresh Ingredients</h3>
-                        <p>Sourced daily for maximum flavour</p>
+            <div class="categories-grid">
+                <!-- Row 1 -->
+                <a href="#rice-dishes" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#127834;</span>
                     </div>
-                    <div class="feature">
-                        <span class="feature-icon">&#128293;</span>
-                        <h3>Traditional Recipes</h3>
-                        <p>Authentic family recipes from Indonesia</p>
+                    <h3>Nasi Goreng &amp; Rice Dishes</h3>
+                </a>
+
+                <a href="#noodles" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#127836;</span>
                     </div>
-                    <div class="feature">
-                        <span class="feature-icon">&#128666;</span>
-                        <h3>Fast Delivery</h3>
-                        <p>Hot meals delivered to your doorstep</p>
+                    <h3>Noodles &amp; Laksa</h3>
+                </a>
+
+                <a href="#beverages" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#9749;</span>
                     </div>
-                </div>
+                    <h3>Beverages</h3>
+                </a>
+
+                <!-- Row 2 -->
+                <a href="#value-meals" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#127860;</span>
+                    </div>
+                    <h3>Value Meals</h3>
+                </a>
+
+                <a href="#satay" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#129385;</span>
+                    </div>
+                    <h3>Satay &amp; Grilled</h3>
+                </a>
+
+                <a href="#drinks" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#129380;</span>
+                    </div>
+                    <h3>Iced Drinks</h3>
+                </a>
+
+                <!-- Row 3 -->
+                <a href="#breakfast" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#127859;</span>
+                    </div>
+                    <h3>Breakfast</h3>
+                </a>
+
+                <a href="#sides" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#127839;</span>
+                    </div>
+                    <h3>Sides &amp; Snacks</h3>
+                </a>
+
+                <a href="#sambal" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#127798;</span>
+                    </div>
+                    <h3>Sambal &amp; Condiments</h3>
+                </a>
+
+                <!-- Row 4 -->
+                <a href="#curries" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#127858;</span>
+                    </div>
+                    <h3>Curries &amp; Rendang</h3>
+                </a>
+
+                <a href="#family" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#127881;</span>
+                    </div>
+                    <h3>Family Feast</h3>
+                </a>
+
+                <!-- Row 5 -->
+                <a href="#seafood" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#128031;</span>
+                    </div>
+                    <h3>Seafood</h3>
+                </a>
+
+                <a href="#desserts" class="category-card">
+                    <div class="category-image">
+                        <span class="category-emoji">&#127856;</span>
+                    </div>
+                    <h3>Sweets &amp; Desserts</h3>
+                </a>
             </div>
         </div>
     </section>
 
-
-    <!-- Menu Section -->
-    <section id="menu" class="menu">
+    <!-- Detailed Menu Sections -->
+    <section id="rice-dishes" class="menu-detail">
         <div class="container">
-            <div class="section-header">
-                <h2>Our Menu</h2>
-                <div class="divider"></div>
-                <p class="section-subtitle">Discover our selection of Indonesian &amp; Asian favourites</p>
-            </div>
-
-            <!-- Menu Category: Rice Dishes -->
-            <div class="menu-category">
-                <h3 class="category-title">&#127834; Rice Dishes</h3>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Nasi Goreng Kampung</h4>
-                            <span class="price">$12.90</span>
-                        </div>
-                        <p>Traditional Indonesian fried rice with sweet soy sauce, shallots, chilli, and topped with fried egg and crackers</p>
-                        <span class="badge spicy">Spicy</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Nasi Lemak Special</h4>
-                            <span class="price">$13.90</span>
-                        </div>
-                        <p>Fragrant coconut rice served with sambal, fried chicken, anchovies, peanuts, cucumber, and boiled egg</p>
-                        <span class="badge popular">Popular</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Nasi Padang</h4>
-                            <span class="price">$14.90</span>
-                        </div>
-                        <p>Steamed rice served with rendang, gulai ayam, sambal hijau, and crispy cassava leaves</p>
-                        <span class="badge popular">Popular</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Nasi Ayam Penyet</h4>
-                            <span class="price">$13.50</span>
-                        </div>
-                        <p>Smashed fried chicken served on steamed rice with spicy sambal, tofu, tempeh, and fresh vegetables</p>
-                        <span class="badge spicy">Spicy</span>
+            <h2 class="detail-title">Nasi Goreng &amp; Rice Dishes</h2>
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127834;</div>
+                    <div class="detail-info">
+                        <h4>Nasi Goreng Kampung</h4>
+                        <p>Traditional fried rice with sweet soy, shallots, chilli, fried egg &amp; crackers</p>
+                        <span class="detail-price">$12.90</span>
                     </div>
                 </div>
-            </div>
-
-
-            <!-- Menu Category: Noodle Dishes -->
-            <div class="menu-category">
-                <h3 class="category-title">&#127836; Noodle Dishes</h3>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Mee Goreng Mamak</h4>
-                            <span class="price">$11.90</span>
-                        </div>
-                        <p>Spicy stir-fried yellow noodles with prawns, tofu, bean sprouts, and tangy tomato-chilli sauce</p>
-                        <span class="badge spicy">Spicy</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Laksa Lemak</h4>
-                            <span class="price">$13.90</span>
-                        </div>
-                        <p>Rich and creamy coconut curry noodle soup with prawns, tofu puffs, fish cake, and fresh herbs</p>
-                        <span class="badge popular">Popular</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Kwetiau Goreng</h4>
-                            <span class="price">$12.50</span>
-                        </div>
-                        <p>Indonesian stir-fried flat rice noodles with chicken, prawns, vegetables, and sweet soy sauce</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Bakso Soup</h4>
-                            <span class="price">$11.50</span>
-                        </div>
-                        <p>Hearty Indonesian meatball soup with rice vermicelli, bok choy, fried shallots, and sambal</p>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127834;</div>
+                    <div class="detail-info">
+                        <h4>Nasi Lemak Special</h4>
+                        <p>Coconut rice with sambal, fried chicken, anchovies, peanuts &amp; boiled egg</p>
+                        <span class="detail-price">$13.90</span>
                     </div>
                 </div>
-            </div>
-
-
-            <!-- Menu Category: Grilled & Fried -->
-            <div class="menu-category">
-                <h3 class="category-title">&#128293; Grilled &amp; Fried</h3>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Satay Ayam (10 pcs)</h4>
-                            <span class="price">$14.90</span>
-                        </div>
-                        <p>Charcoal-grilled chicken skewers marinated in turmeric and lemongrass, served with peanut sauce and ketupat</p>
-                        <span class="badge popular">Popular</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Ayam Bakar Taliwang</h4>
-                            <span class="price">$15.90</span>
-                        </div>
-                        <p>Lombok-style grilled chicken marinated in spicy chilli paste, served with plecing kangkung and steamed rice</p>
-                        <span class="badge spicy">Spicy</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Ikan Bakar Jimbaran</h4>
-                            <span class="price">$16.90</span>
-                        </div>
-                        <p>Balinese-style grilled fish with sambal matah, fresh lime, and aromatic lemongrass</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Tahu &amp; Tempeh Goreng</h4>
-                            <span class="price">$8.90</span>
-                        </div>
-                        <p>Crispy fried tofu and tempeh served with sweet chilli dipping sauce and fresh cucumber</p>
-                        <span class="badge vegetarian">Vegetarian</span>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127834;</div>
+                    <div class="detail-info">
+                        <h4>Nasi Padang</h4>
+                        <p>Steamed rice with rendang, gulai ayam, sambal hijau &amp; cassava leaves</p>
+                        <span class="detail-price">$14.90</span>
                     </div>
                 </div>
-            </div>
-
-
-            <!-- Menu Category: Curries & Stews -->
-            <div class="menu-category">
-                <h3 class="category-title">&#127858; Curries &amp; Stews</h3>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Beef Rendang</h4>
-                            <span class="price">$16.90</span>
-                        </div>
-                        <p>Slow-cooked beef in rich coconut milk with lemongrass, galangal, and aromatic spices until tender and dry</p>
-                        <span class="badge popular">Popular</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Gulai Ayam</h4>
-                            <span class="price">$14.50</span>
-                        </div>
-                        <p>Chicken cooked in aromatic yellow curry sauce with turmeric, kaffir lime leaves, and coconut milk</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Sayur Lodeh</h4>
-                            <span class="price">$10.90</span>
-                        </div>
-                        <p>Mixed vegetables simmered in light coconut curry with tofu, long beans, cabbage, and chayote</p>
-                        <span class="badge vegetarian">Vegetarian</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Thai Green Curry</h4>
-                            <span class="price">$14.90</span>
-                        </div>
-                        <p>Fragrant green curry with chicken, Thai basil, bamboo shoots, and eggplant in creamy coconut sauce</p>
-                        <span class="badge spicy">Spicy</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Menu Category: Sides & Snacks -->
-            <div class="menu-category">
-                <h3 class="category-title">&#127839; Sides &amp; Snacks</h3>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Gado-Gado</h4>
-                            <span class="price">$9.90</span>
-                        </div>
-                        <p>Indonesian salad of blanched vegetables, tofu, tempeh, and boiled egg with rich peanut dressing</p>
-                        <span class="badge vegetarian">Vegetarian</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Martabak Telur</h4>
-                            <span class="price">$10.90</span>
-                        </div>
-                        <p>Crispy stuffed pancake filled with spiced minced meat, egg, and spring onions, served with pickled cucumber</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Spring Rolls (5 pcs)</h4>
-                            <span class="price">$7.90</span>
-                        </div>
-                        <p>Crispy fried spring rolls filled with vegetables and glass noodles, served with sweet chilli sauce</p>
-                        <span class="badge vegetarian">Vegetarian</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Perkedel Kentang (3 pcs)</h4>
-                            <span class="price">$6.90</span>
-                        </div>
-                        <p>Indonesian potato fritters seasoned with nutmeg and fried until golden, served with sambal</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Menu Category: Beverages -->
-            <div class="menu-category">
-                <h3 class="category-title">&#127861; Beverages</h3>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Es Teh Manis</h4>
-                            <span class="price">$4.50</span>
-                        </div>
-                        <p>Classic Indonesian iced sweet tea, refreshing and perfectly sweetened</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Es Cendol</h4>
-                            <span class="price">$5.90</span>
-                        </div>
-                        <p>Iced dessert drink with pandan jelly, coconut milk, and palm sugar syrup</p>
-                        <span class="badge popular">Popular</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Teh Tarik</h4>
-                            <span class="price">$4.90</span>
-                        </div>
-                        <p>Pulled milk tea with a rich, creamy froth &mdash; a Southeast Asian classic</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Bandung Rose</h4>
-                            <span class="price">$4.90</span>
-                        </div>
-                        <p>Sweet rose syrup with evaporated milk over ice, beautifully pink and refreshing</p>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127834;</div>
+                    <div class="detail-info">
+                        <h4>Nasi Ayam Penyet</h4>
+                        <p>Smashed fried chicken on rice with sambal, tofu, tempeh &amp; vegetables</p>
+                        <span class="detail-price">$13.50</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Specials Section -->
-    <section id="specials" class="specials">
+    <section id="noodles" class="menu-detail alt-bg">
         <div class="container">
-            <div class="section-header">
-                <h2>Today's Specials</h2>
-                <div class="divider"></div>
-                <p class="section-subtitle">Chef's picks &mdash; available for a limited time</p>
-            </div>
-            <div class="specials-grid">
-                <div class="special-card">
-                    <div class="special-badge">Chef's Pick</div>
-                    <div class="special-content">
-                        <h3>Nasi Tumpeng Mini</h3>
-                        <p>Celebratory yellow rice cone with assorted side dishes &mdash; perfect for sharing!</p>
-                        <span class="special-price">$22.90</span>
-                        <a href="#order" class="btn-small">Order Now</a>
+            <h2 class="detail-title">Noodles &amp; Laksa</h2>
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127836;</div>
+                    <div class="detail-info">
+                        <h4>Mee Goreng Mamak</h4>
+                        <p>Spicy fried yellow noodles with prawns, tofu &amp; tomato-chilli sauce</p>
+                        <span class="detail-price">$11.90</span>
                     </div>
                 </div>
-                <div class="special-card">
-                    <div class="special-badge">New</div>
-                    <div class="special-content">
-                        <h3>Soto Betawi</h3>
-                        <p>Creamy Jakarta-style beef soup with potatoes, tomatoes, and fried shallots</p>
-                        <span class="special-price">$14.90</span>
-                        <a href="#order" class="btn-small">Order Now</a>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127836;</div>
+                    <div class="detail-info">
+                        <h4>Laksa Lemak</h4>
+                        <p>Creamy coconut curry noodle soup with prawns, tofu puffs &amp; fish cake</p>
+                        <span class="detail-price">$13.90</span>
                     </div>
                 </div>
-                <div class="special-card">
-                    <div class="special-badge">Bundle</div>
-                    <div class="special-content">
-                        <h3>Family Feast Package</h3>
-                        <p>Nasi Goreng + Satay (10pcs) + Rendang + Gado-Gado + 4 Drinks</p>
-                        <span class="special-price">$49.90</span>
-                        <a href="#order" class="btn-small">Order Now</a>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127836;</div>
+                    <div class="detail-info">
+                        <h4>Kwetiau Goreng</h4>
+                        <p>Stir-fried flat rice noodles with chicken, prawns &amp; sweet soy sauce</p>
+                        <span class="detail-price">$12.50</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127836;</div>
+                    <div class="detail-info">
+                        <h4>Bakso Soup</h4>
+                        <p>Indonesian meatball soup with vermicelli, bok choy &amp; fried shallots</p>
+                        <span class="detail-price">$11.50</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="satay" class="menu-detail">
+        <div class="container">
+            <h2 class="detail-title">Satay &amp; Grilled</h2>
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <div class="detail-emoji">&#129385;</div>
+                    <div class="detail-info">
+                        <h4>Satay Ayam (10 pcs)</h4>
+                        <p>Charcoal-grilled chicken skewers with peanut sauce &amp; ketupat</p>
+                        <span class="detail-price">$14.90</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#128293;</div>
+                    <div class="detail-info">
+                        <h4>Ayam Bakar Taliwang</h4>
+                        <p>Lombok-style grilled chicken with spicy chilli paste &amp; kangkung</p>
+                        <span class="detail-price">$15.90</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#128031;</div>
+                    <div class="detail-info">
+                        <h4>Ikan Bakar Jimbaran</h4>
+                        <p>Balinese grilled fish with sambal matah, lime &amp; lemongrass</p>
+                        <span class="detail-price">$16.90</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127857;</div>
+                    <div class="detail-info">
+                        <h4>Tahu &amp; Tempeh Goreng</h4>
+                        <p>Crispy fried tofu &amp; tempeh with sweet chilli dipping sauce</p>
+                        <span class="detail-price">$8.90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curries" class="menu-detail alt-bg">
+        <div class="container">
+            <h2 class="detail-title">Curries &amp; Rendang</h2>
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127858;</div>
+                    <div class="detail-info">
+                        <h4>Beef Rendang</h4>
+                        <p>Slow-cooked beef in coconut milk with lemongrass &amp; aromatic spices</p>
+                        <span class="detail-price">$16.90</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127858;</div>
+                    <div class="detail-info">
+                        <h4>Gulai Ayam</h4>
+                        <p>Chicken in yellow curry with turmeric, kaffir lime &amp; coconut milk</p>
+                        <span class="detail-price">$14.50</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#129388;</div>
+                    <div class="detail-info">
+                        <h4>Sayur Lodeh</h4>
+                        <p>Mixed vegetables in light coconut curry with tofu &amp; long beans</p>
+                        <span class="detail-price">$10.90</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127798;</div>
+                    <div class="detail-info">
+                        <h4>Thai Green Curry</h4>
+                        <p>Fragrant green curry with chicken, Thai basil &amp; eggplant</p>
+                        <span class="detail-price">$14.90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sides" class="menu-detail">
+        <div class="container">
+            <h2 class="detail-title">Sides &amp; Snacks</h2>
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <div class="detail-emoji">&#129367;</div>
+                    <div class="detail-info">
+                        <h4>Gado-Gado</h4>
+                        <p>Blanched vegetables, tofu &amp; egg with rich peanut dressing</p>
+                        <span class="detail-price">$9.90</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#129386;</div>
+                    <div class="detail-info">
+                        <h4>Martabak Telur</h4>
+                        <p>Stuffed pancake with spiced meat, egg &amp; spring onions</p>
+                        <span class="detail-price">$10.90</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127839;</div>
+                    <div class="detail-info">
+                        <h4>Spring Rolls (5 pcs)</h4>
+                        <p>Crispy rolls with vegetables &amp; glass noodles, sweet chilli sauce</p>
+                        <span class="detail-price">$7.90</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#129364;</div>
+                    <div class="detail-info">
+                        <h4>Perkedel Kentang (3 pcs)</h4>
+                        <p>Golden potato fritters with nutmeg, served with sambal</p>
+                        <span class="detail-price">$6.90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beverages" class="menu-detail alt-bg">
+        <div class="container">
+            <h2 class="detail-title">Beverages</h2>
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127861;</div>
+                    <div class="detail-info">
+                        <h4>Es Teh Manis</h4>
+                        <p>Classic Indonesian iced sweet tea</p>
+                        <span class="detail-price">$4.50</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#129380;</div>
+                    <div class="detail-info">
+                        <h4>Es Cendol</h4>
+                        <p>Pandan jelly, coconut milk &amp; palm sugar syrup over ice</p>
+                        <span class="detail-price">$5.90</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#9749;</div>
+                    <div class="detail-info">
+                        <h4>Teh Tarik</h4>
+                        <p>Pulled milk tea with rich creamy froth</p>
+                        <span class="detail-price">$4.90</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-emoji">&#127865;</div>
+                    <div class="detail-info">
+                        <h4>Bandung Rose</h4>
+                        <p>Sweet rose syrup with evaporated milk over ice</p>
+                        <span class="detail-price">$4.90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Order Section -->
     <section id="order" class="order-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Order Online</h2>
-                <div class="divider"></div>
-                <p class="section-subtitle">Place your order and enjoy our food from the comfort of your home</p>
-            </div>
+            <h2 class="detail-title" style="color:#fff;">Order Online</h2>
+            <p class="order-subtitle">Place your order and enjoy our food from the comfort of your home</p>
             <div class="order-content">
                 <div class="order-info">
                     <div class="order-step">
@@ -390,44 +420,9 @@
                 </div>
                 <div class="order-cta">
                     <h3>Ready to Order?</h3>
-                    <p>Contact us now to place your order:</p>
                     <a href="tel:+6500000000" class="btn-primary">&#128222; Call Now</a>
                     <a href="https://wa.me/6500000000" class="btn-whatsapp" target="_blank">&#128172; WhatsApp Order</a>
-                    <p class="order-note">* Minimum order $20 for delivery. Free delivery for orders above $50.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Find Us</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <span class="contact-icon">&#128205;</span>
-                    <h4>Location</h4>
-                    <p>123 Food Street<br>Singapore 123456</p>
-                </div>
-                <div class="contact-card">
-                    <span class="contact-icon">&#128338;</span>
-                    <h4>Opening Hours</h4>
-                    <p>Monday &ndash; Saturday<br>10:00 AM &ndash; 9:00 PM</p>
-                    <p>Sunday: 11:00 AM &ndash; 8:00 PM</p>
-                </div>
-                <div class="contact-card">
-                    <span class="contact-icon">&#128222;</span>
-                    <h4>Contact</h4>
-                    <p>Phone: +65 0000 0000<br>WhatsApp: +65 0000 0000</p>
-                </div>
-                <div class="contact-card">
-                    <span class="contact-icon">&#128231;</span>
-                    <h4>Email</h4>
-                    <p>hello@zalehafoodcorner.com</p>
+                    <p class="order-note">Min. order $20 for delivery. Free delivery above $50.</p>
                 </div>
             </div>
         </div>
@@ -440,25 +435,22 @@
                 <div class="footer-brand">
                     <h3>New Zaleha Food Corner</h3>
                     <p>by Lynn's Kitchen</p>
-                    <p class="footer-tagline">Bringing the authentic taste of Indonesia &amp; Asia to your table.</p>
+                    <p class="footer-tagline">Authentic Indonesian &amp; Asian Cuisine</p>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#specials">Specials</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
                         <li><a href="#order">Order Online</a></li>
+                        <li><a href="#specials">Deals</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">FB</a>
-                        <a href="#" aria-label="Instagram">IG</a>
-                        <a href="#" aria-label="TikTok">TK</a>
-                    </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>123 Food Street, Singapore 123456</p>
+                    <p>Phone: +65 0000 0000</p>
+                    <p>Mon-Sat: 10AM-9PM | Sun: 11AM-8PM</p>
                 </div>
             </div>
             <div class="footer-bottom">
